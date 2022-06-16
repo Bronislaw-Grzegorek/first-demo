@@ -1,1 +1,0 @@
-1.New nx_attr_mappings.txt file that sets the  SP5PartEng Item Name created in NX New>Item and sets it in Properties.

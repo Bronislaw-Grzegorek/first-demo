@@ -1,1 +1,0 @@
-make_user %CREDENTIALS% -file=rimtc_sample_users.txt

@@ -1,5 +1,0 @@
-ed|ed|ed|Engineering|Designer|||licenselevel|author
-matt|matt|matt|Manufacturing|Engineer|||licenselevel|author
-quinn |quinn|quinn|Quality|Engineer|||licenselevel|author
-carl|carl|carl|Consumer|Viewer|||licenselevel|author
-chloe|chloe|chloe|Checker|CM|||licenselevel|author
