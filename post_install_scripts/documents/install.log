@@ -1,0 +1,15 @@
+Log started 03/01/2022 at 05:42:19
+Preferred installation mode : win32
+Trying to init installer in mode win32
+Mode win32 successfully initialized
+[05:42:30] OS Version: 10.0.0
+[05:42:30] OS Name: Windows 2016 Standard
+[05:42:30] System Type: x64
+Could not find registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{5ACD451F-AE53-4375-9AF5-3CF0801362DA} InstallLocation. Setting variable install_location to empty value
+Could not find registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{5ACD451F-AE53-4375-9AF5-3CF0801362DA} InstallLocation. Setting variable install_location to empty value
+Could not find registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{1842532D-0AD3-4470-8E32-798BB63EF496} InstallLocation. Setting variable install_location to empty value
+Could not find registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{1842532D-0AD3-4470-8E32-798BB63EF496} InstallLocation. Setting variable install_location to empty value
+Could not find registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{26EECDC0-AD04-4BB0-9F15-5C7763933790} InstallLocation. Setting variable install_location to empty value
+Could not find registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{26EECDC0-AD04-4BB0-9F15-5C7763933790} InstallLocation. Setting variable install_location to empty value
+Could not find registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{B40EED7A-63D4-4ED2-910D-9A64FF94DF22} InstallLocation. Setting variable install_location to empty value
+Could not find registry key HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{B40EED7A-63D4-4ED2-910D-9A64FF94DF22} InstallLocation. Setting variable install_location to empty value
