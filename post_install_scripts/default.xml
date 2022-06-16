@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="">
+<Add>
+   <Library name="UiE3demo" createRelease="tc9000.1.0" serviceLibrary="false" namespace=""
+       isThirdParty="false" description="Ui Enhancements Library">
+     <DeprecationInfo deprecatedRelease="tc10000.0.0" deprecatedDescription="Not Used."/>
+     <DependentOn name="metaframework"/>
+     <DependentOn name="tccore"/>
+     <DependentOn name="tc"/>
+     <DependentOn name="cxpom"/>
+   </Library>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3CMHasImpactedItem_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="Runtime list of Primary objects in the CMHasImpactedItem relation."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3CMHasProblemItem_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="Runtime list of Primary Objects in the CMHasProblemItem relation."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3CMHasSolutionItem_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="Runtime list of Primary Objects in the CMHasSolutionItem relation."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3CMHasWorkBreakdown_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="Runtime list of Primary Objects in the CMHasWorkBreakdown relation."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3CMImplementedBy_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="Retrieve secondary object from CMImplements relation."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3CMImplements_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="Runtime list of Primary Objects in the CMImplements relation."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3CMReferences_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="Runtime list of Primary Objects in the CMReferences relation."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3CMSolToImpacted_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="Runtime list of Primary Objects in the CMSolutionToImpacted relation."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3DatasetLink" propTypeName="Runtime" propValueType="PROP_string"
+         propMaxStringLength="256" isArray="true" arrayLength="-1" description="Related Dataset File Links for the WEB"
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3DEF_TraceLink_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="Runtime propertry to get the Defining Objects of a FND_TraceLink relation."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcPropertyAttach typeName="ItemRevision">
+     <TcProperty propName="uie3WhereUsed_list" propTypeName="Runtime" propValueType="PROP_untyped_reference"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="List of the latest rev Parent ItemRevision objects."
+         referencedTypeConstant="" referencedType=""/>
+   </TcPropertyAttach>
+   <TcGlobalConstantAttach constantName="Fnd0SelectedLocales" value="en_US"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3CMHasImpactedItem_list"
+       value="Read"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3CMHasProblemItem_list"
+       value="Read"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3CMHasSolutionItem_list"
+       value="Read"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3CMHasWorkBreakdown_list"
+       value="Read"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3CMImplementedBy_list"
+       value="Read"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3CMImplements_list"
+       value="Read"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3CMReferences_list"
+       value="Read"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3CMSolToImpacted_list"
+       value="Read"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3DatasetLink"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3DEF_TraceLink_list"
+       value="Read"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3user_data_1"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3user_data_2"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3user_data_3"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="ItemRevision" propertyName="uie3WhereUsed_list"
+       value="Write"/>
+   <TcCompoundPropertyRule destTypeName="ItemRevision" destPropertyName="uie3user_data_1"
+       sourceTypeName="ItemRevision Master" sourcePropertyName="user_data_1" isReadOnly="false"
+       pathToSource="GRM(IMAN_master_form_rev,ItemRevision Master).user_data_1" description="To ItemRevisionManager user_data_1"/>
+   <TcCompoundPropertyRule destTypeName="ItemRevision" destPropertyName="uie3user_data_2"
+       sourceTypeName="ItemRevision Master" sourcePropertyName="user_data_2" isReadOnly="false"
+       pathToSource="GRM(IMAN_master_form_rev,ItemRevision Master).user_data_2" description="To ItemRevision Master user_data_2"/>
+   <TcCompoundPropertyRule destTypeName="ItemRevision" destPropertyName="uie3user_data_3"
+       sourceTypeName="ItemRevision Master" sourcePropertyName="user_data_3" isReadOnly="false"
+       pathToSource="GRM(IMAN_master_form_rev,ItemRevision Master).user_data_3" description="To ItemRevisionMaster user_data_3"/>
+   <TcTypeDisplayRule hiddenTypeName="AdobeIllustrator" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Bitmap" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Briefcase" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAEAnalysisDS" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAEBC" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAEConn" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAEGeom" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAELoad" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAEMesh" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAEResults" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAESolution" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAESolver" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CAEStructureMap" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ClearanceDBConnection" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ClearanceDBReport" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ClearanceResults" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ClearanceResultsFilter" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CME_Report" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CPMarketingBrief" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CPThemeBoard" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfExcelStylesheet" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfHtmlStylesheet" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfMSWordDocStylesheet" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfOutputExcel" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfOutputHtml" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfOutputMSWord" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfOutputPdf" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfOutputText" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfOutputXml" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfPdfStylesheet" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfTextStylesheet" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="CrfXmlStylesheet" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="DFA_KF" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="DirectModelAnimation" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="DirectModelFlowChart" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="DirectModelIllustrationBook" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="DirectModelIllustrationSheet" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="DirectModelMarkup" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="DirectModelMotion" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="DirectModelSession" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="DMTemplate" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Email" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ExcelReportFormatter" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ExcelTemplate" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Fnd0CustomNote" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Fnd0ParamReqment" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="HPGL" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ICSClassFiles" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="IPAConfig" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="JPEG_Thumbnail" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="KRX" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Markup" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="MEMachineDriver" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="MSExcelTemplateX" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="MSPowerPointTemplateX" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="MSProject" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="MSWordTemplateX" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Nastran" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="NetworkImage" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="NXAFEM" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="NXDerived" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="NXMotion" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="NXRouting" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="NXSimulation" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Outlook" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="PCF" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="PDX" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Photoshop" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="PortfolioHFT" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Postscript" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="RouteLocation" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="SimulationProcessStudio" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="SnapShotViewData" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Spatial_Data" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="STL" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="TCPublishingAliases" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="TCPublishingPage" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="TCPublishingTechnicalPortfolio" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="TechnicalPortfolioXML" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="TempDirectModelMarkup" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="TempMarkup" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="TranslationOrder" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="TranslatnDelvry" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="TransltnOffice" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="UGALTREP" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="UGCAMCLSF" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="UGCAMPTP" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="UGCAMShopDoc" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="UGCAMTemplateData" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="UGENGINEROLL" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="UGSCENARIO" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="UGTIREOFFSET" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="UGTIRESPINDLE" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ValidationReq" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ValidationResultLog" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="ValidationRuleSet" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Vis_Snapshot_2D_View_Data" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisJackEnvironment" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisJackFigure" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisJackPosture" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisJackPsurf" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisMovieCapture" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisPublishGeometryAsset" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisPublishTechnicalIllustration" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisPublishTechnicalPortfolio" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisPublishVisioStencil" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisPublishVisioTemplate" accessorName="Demo"
+       accessorType="Group" conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VisQualityCluster" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VSAMeasurementDoc" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="VSAProcessDoc" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="WordPerfect" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="XMLAuditLog" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="XMLReportFormatter" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+   <TcTypeDisplayRule hiddenTypeName="Zone" accessorName="Demo" accessorType="Group"
+       conditionName="isTrue" description=""/>
+</Add>
+</TcBusinessData>
