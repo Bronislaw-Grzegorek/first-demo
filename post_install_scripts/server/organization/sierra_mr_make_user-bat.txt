@@ -1,0 +1,1 @@
+make_user %CREDENTIALS% -file=sierra_mr_users.txt

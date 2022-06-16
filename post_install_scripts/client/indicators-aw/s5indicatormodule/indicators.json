@@ -1,0 +1,86 @@
+{
+	"SP5DocReleaseIndicator": {
+		"iconName": "SP5DocReleased",
+		"tooltip": {
+			"showPropDisplayName": false,
+			"propNames": ["object_name", "date_released"]
+		},
+		"prop": {
+			"names": [
+				"release_status_list"
+			],
+			"type": {
+				"names": [
+					"ReleaseStatus"
+				],
+				"prop": {
+					"names": [
+						"object_name"
+					],
+					"conditions": {
+						"object_name": {
+							"$eq": "SP5DocReleased"
+						}
+					}
+				}
+			}
+		},
+		"modelTypes": ["WorkspaceObject"]
+	},
+	"SP5DevelopmentIndicator": {
+		"iconName": " SP5Development",
+		"tooltip": {
+			"showPropDisplayName": false,
+			"propNames": ["object_name", "date_released"]
+		},
+		"prop": {
+			"names": [
+				"release_status_list"
+			],
+			"type": {
+				"names": [
+					"ReleaseStatus"
+				],
+				"prop": {
+					"names": [
+						"object_name"
+					],
+					"conditions": {
+						"object_name": {
+							"$eq": "SP5Development"
+						}
+					}
+				}
+			}
+		},
+		"modelTypes": ["WorkspaceObject"]
+	},
+	"SP5ProductionIndicator": {
+		"iconName": "SP5Production",
+		"tooltip": {
+			"showPropDisplayName": false,
+			"propNames": ["object_name", "date_released"]
+		},
+		"prop": {
+			"names": [
+				"release_status_list"
+			],
+			"type": {
+				"names": [
+					"ReleaseStatus"
+				],
+				"prop": {
+					"names": [
+						"object_name"
+					],
+					"conditions": {
+						"object_name": {
+							"$eq": "SP5Production"
+						}
+					}
+				}
+			}
+		},
+		"modelTypes": ["WorkspaceObject"]
+	}
+}

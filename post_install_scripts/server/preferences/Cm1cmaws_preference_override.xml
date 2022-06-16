@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<preferences version="10.0">
+  <category name="Change Management Active Workspace">
+    <preference name="AWC_DisplayableChangeTypes" type="String" array="true" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Defines the list of "ChangeItemRevision" types that are presented in the "Change Management" application in the Active Workspace Client (AWC).
+                              Valid values are types internal names.</preference_description>
+      <context name="Teamcenter">
+        <value>ProblemReportRevision</value>
+        <value>ChangeRequestRevision</value>
+        <value>ChangeNoticeRevision</value>
+        <value>Cm0DevRqstRevision</value>
+      </context>
+    </preference>
+    <preference name="AWC_ChangeNoticeRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of summary stylesheet for ChangeNoticeRevision objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ChangeNoticeRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_Cm0SimpleChangeRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of summary stylesheet for Cm0SimpleChangeRevision objects.</preference_description>
+      <context name="Teamcenter">
+        <value>sp5SimChgRevisionSummary</value>
+      </context>
+    </preference>    
+    <preference name="AWC_ChangeRequestRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of summary stylesheet for ChangeRequestRevision objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ChangeRequestRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_Cm0DevRqstRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of summary stylesheet for Cm0DevRqstRevision objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1Cm0DevRqstRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_ProblemReportRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of summary stylesheet for ProblemReportRevision objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ProblemReportRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="CMMyChangesSublocationQuery" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registers the saved queries for the contents of the tabs in "My Changes" Location.
+        Valid values are in the format "tab_name,saved_query_name".</preference_description>
+        <context name="Teamcenter">
+        <value>Saved,MyChangesSaved</value>
+        <value>Submitted,MyChangesSubmitted</value>
+        <value>Approved,MyChangesApproved</value>
+        <value>Disapproved,MyChangesDisapproved</value>
+        <value>All,MyChangesAll</value>
+        <value>Closed,MyChangesClosed</value> 
+        <value>Dashboard,MyChangesDashboard</value>
+        <value>Actionable,MyChangesActionable</value>         
+      </context>
+    </preference>
+    <preference name="CM_GnChangeNoticeRevision_AddToMyChange_Relations" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>
+        Defines list of relations which needs to be presented when object of type "ChangeNoticeRevision" is selected on "Add To My Changes" panel in Active Workspace Client (AWC).
+        Valid values are internal of relation types.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>CMHasProblemItem</value>
+        <value>CMHasImpactedItem</value>
+        <value>CMReferences</value>
+        <value>CMHasSolutionItem</value>
+        <value>CMHasWorkBreakdown</value>
+      </context>
+    </preference>
+    <preference name="CM_GnChangeRequestRevision_AddToMyChange_Relations" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>
+        Defines list of relations which needs to be presented when object of type "ChangeRequestRevision" or "DeviationRequestRevision" is selected on "Add To My Changes" panel in Active Workspace Client (AWC).
+        Valid values are internal of relation types.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>CMHasProblemItem</value>
+        <value>CMHasImpactedItem</value>
+        <value>CMReferences</value>
+        <value>CMHasWorkBreakdown</value>
+      </context>
+    </preference>
+    <preference name="CM_GnProblemReportRevision_AddToMyChange_Relations" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>
+        Defines list of relations which needs to be presented when object of type "ProblemReportRevision" is selected on "Add To My Changes" panel in Active Workspace Client (AWC).
+        Valid values are internal of relation types.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>CMHasProblemItem</value>
+        <value>CMReferences</value>
+      </context>
+    </preference>
+    <preference name="CM_Cm0SimpleChangeRevision_AddToMyChange_Relations" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>
+        Defines list of relations which needs to be presented when object of type "Cm0SimpleChangeRevision" is selected on "Add To My Changes" panel in Active Workspace Client (AWC).
+        Valid values are internal of relation types.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>CMHasImpactedItem</value>
+        <value>CMHasSolutionItem</value>
+      </context>
+    </preference>    
+     <preference name="CMEnableChangeDashboard" type="Logical" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>
+        Enable Change Dashboard to be shown on Dashboard Sublocation.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>true</value>
+      </context>
+    </preference>
+  </category>
+  <category name="Change Management">
+    <preference name="AWC_Cm0CfgAudit.CREATERENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of create stylesheet for Configuration Audit objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1CfgAuditCreate</value>
+      </context>
+    </preference>
+    <preference name="AWC_ChangeRequest.CREATERENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of create stylesheet for ChangeRequest objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ChangeRequestCreate</value>
+      </context>
+    </preference>
+    <preference name="AWC_ChangeNotice.CREATERENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of create stylesheet for ChangeNotice objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ChangeNoticeCreate</value>
+      </context>
+    </preference>
+    <preference name="AWC_ProblemReport.CREATERENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of create stylesheet for ProblemReport objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ProblemReportCreate</value>
+      </context>
+    </preference>
+    <preference name="AWC_Cm0DevRqst.CREATERENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of create stylesheet for Cm0DevRqst objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1Cm0DevRqstCreate</value>
+      </context>
+    </preference>
+    <preference name="AWC_Cm0ActionItemRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of summary stylesheet for Action Item Revision objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ActionItemRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_Cm0CfgAuditRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of summary stylesheet for Configuration Audit Revision objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1CfgAuditRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_ChangeItem.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Registration of summary stylesheet for ChangeItem objects.</preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ChangeItemSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_ChangeNoticeRevision.INFORENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+    <preference_description>Registration of the information stylesheet for ChangeNoticeRevision objects.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ChangeNoticeRevisionInfoSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_Cm0SimpleChangeRevision.INFORENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+    <preference_description>Registration of the information stylesheet for SimpleChangeRevision objects.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>SP5SimChgRevisionInfoSummary</value>
+      </context>
+    </preference>    
+    <preference name="AWC_ChangeRequestRevision.INFORENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+    <preference_description>Registration of the information stylesheet for ChangeRequestRevision objects.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ChangeRequestRevisionInfoSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_Cm0DevRqstRevision.INFORENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+    <preference_description>Registration of the information stylesheet for DeviationRequestRevision objects.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>Cm1Cm0DevRqstRevisionInfoSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_ProblemReportRevision.INFORENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+    <preference_description>Registration of the information stylesheet for ProblemReportRevision objects.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>Cm1ProblemReportRevisionInfoSummary</value>
+      </context>
+    </preference>
+            <!-- > Preferences  for Change Graphical Component</!-->
+    <preference name="CM_GraphViews.Change" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>
+        Specifies the list of view names for "Dependency" tab in the client.
+        The view names are defined in Change UI configuration file, which is stored in the data set named by the value of preference "CM_graph_legend_configuration_file_name".
+      </preference_description>
+      <context name="Teamcenter">
+        <value>Change</value>
+      </context>
+    </preference>
+    <preference name="CM_graph_legend_configuration_file_name" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>
+        Registers the name of dataset which stores an XML file containing the Change Graph UI configuration.
+        This is a site preference.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>ChangeGraphLegend</value>
+      </context>
+    </preference>
+    <preference name="CM_graph_presentation_rules_file_name" type="String" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>
+        Registers the name of dataset which stores an XML file containing the Presentation Rules of the shapes.
+        This is a site preference.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>ChangeGraphPresentationRules</value>
+      </context>
+    </preference>
+    <preference name="CM_graph_presentation_styles_file_name" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>
+        Registers the name of dataset which stores an XML file containing the Presentation Styles of the shapes.
+        This is a site preference.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>ChangeGraphPresentationStyles</value>
+      </context>
+    </preference>
+    <preference name="CM_derive_thumbnail_from_relations" type="Logical" array="false" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>
+        Enable derive thumbnail from relation to Change Item Revision.
+        This is a site preference.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>false</value>
+      </context>
+    </preference>
+    <preference name="RV1_DARB_RelationBrowserViews.Relations.ChangeItemRevision" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>
+        default the display view of relation browser to "Change View" for object type ChangeItemRevision context.
+      </preference_description>
+      <context name="Teamcenter">
+        <value>Change</value>
+        <value>ChangeImpactAnalysis</value>
+      </context>
+    </preference>  
+    <preference name="Cm0ImpactedItemReleasedStatuses" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This preference holds the list of possible release statuses to be considered for an item revision to be added as an impacted revision for the corresponding solutions added to a Change Notice.</preference_description>
+      <context name="Teamcenter">
+        <value>TCM Released</value>
+        <value>Released</value>
+      </context>
+    </preference>
+  </category>
+</preferences>

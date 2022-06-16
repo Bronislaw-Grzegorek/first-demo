@@ -1,0 +1,3 @@
+1. Go to TC_DATA directory
+2. Create a backup copy of TC_DATA/ProgressionPath.plmxml file
+3. Replace TC_DATA/ProgressionPath.plmxml file with the included file.

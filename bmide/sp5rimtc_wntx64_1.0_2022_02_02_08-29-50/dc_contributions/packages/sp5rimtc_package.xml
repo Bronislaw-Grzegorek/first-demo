@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+Copyright 2017 Siemens Product Lifecycle Management Software Inc. All Rights Reserved.
+================================================================================
+Copyright 2017.
+Siemens Product Lifecycle Management Software Inc.
+All Rights Reserved.
+================================================================================
+Copyright 2017 Siemens Product Lifecycle Management Software Inc. All Rights Reserved.
+-->
+<package guid="271CC027BA1A945BF0DBBC0C3358A616" packageId="sp5rimtc">
+    <displayName value="${packageId}.displayName"/>
+    <description value="${packageId}.description"/>
+    <contentType value="application"/>
+    <propertyContribution/>
+    <dependencies>
+        <dependency id="aws2" type="requires"/>
+        <dependency id="cm" type="requires"/>
+        <dependency id="activeworkspacebom" type="requires"/>
+    </dependencies>
+    <artifact artifactType="fnd0_dataModelArtifact" guid="4556E8174DF483204FBC334616ED18CD">
+        <deploymentActions>
+            <install>
+                <target description="Perform the file deployment actions including unzip, copy, and delete." name="fileProcessing">
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_sp5rimtc_path}/artifacts/sp5rimtc_template.zip"/>
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_sp5rimtc_path}/artifacts/sp5rimtc_install.zip"/>
+                    <copy file="${Teamcenter_sp5rimtc_path}/artifacts/sp5rimtc_icons.zip" todir="${Teamcenter_root_path}/install/sp5rimtc"/>
+                </target>
+                <target description="Perform the operations that must be completed prior to the database being updated." name="preDatabaseUpdate">
+                    <TemplateDeploy name="sp5rimtc"/>
+                </target>
+                <target description="Perform the operations that are database dependent." name="databaseUpdate"/>
+                <target description="Perform the operations that must be completed after the database update has occurred." name="postDatabaseUpdate"/>
+            </install>
+            <update>
+                <target description="Perform the file deployment actions including unzip, copy, and delete." name="fileProcessing">
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_sp5rimtc_path}/artifacts/sp5rimtc_template.zip"/>
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_sp5rimtc_path}/artifacts/sp5rimtc_install.zip"/>
+                    <copy file="${Teamcenter_sp5rimtc_path}/artifacts/sp5rimtc_icons.zip" force="true" overwrite="true" todir="${Teamcenter_root_path}/install/sp5rimtc"/>
+                </target>
+                <target description="Perform the operations that must be completed prior to the database being updated." name="preDatabaseUpdate">
+                    <TemplateUpdate name="sp5rimtc"/>
+                </target>
+                <target description="Perform the operations that are database dependent." name="databaseUpdate"/>
+                <target description="Perform the operations that must be completed after the database update has occurred." name="postDatabaseUpdate"/>
+            </update>
+        </deploymentActions>
+    </artifact>
+</package>

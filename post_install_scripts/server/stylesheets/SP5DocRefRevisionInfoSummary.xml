@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+// @<COPYRIGHT>@
+// ==================================================
+// Copyright 2014.
+// Siemens Product Lifecycle Management Software Inc.
+// All Rights Reserved.
+// ==================================================
+// @<COPYRIGHT>@
+-->
+<!-- Style sheet for displaying Document rev Info Panel in Active Workspace Client. -->
+<rendering>
+    <header>
+        <property name="object_string"/>
+    </header>
+    <page titleKey="tc_xrt_Summary">
+        <section titleKey="tc_xrt_properties">
+            <property name="item_id" renderingHint="label"/>
+            <property name="item_revision_id" renderingHint="label"/>
+            <property name="object_name"/>
+            <property name="release_status_list" renderingHint="label"/>
+            <property name="date_released" renderingHint="label"/>
+            <break/>
+            <property name="owning_user" renderingHint="objectlink" modifiable="false"/>
+            <property name="owning_group" renderingHint="objectlink" modifiable="false"/>
+            <property name="last_mod_user"/>
+            <property name="checked_out" renderingHint="label"/>
+            <property name="checked_out_user"/>
+        </section>
+		<section titleKey="Sierra Space Properties" title="Sierra Space Properties">	
+			<property name="sp5AbsDocPropCLOV1"/>
+			<property name="sp5AbsDocPropCLOV2"/>
+			<property name="sp5AbsDocPropCLOV3"/>
+			<property name="sp5AbsDocPropCLOV5"/>
+		</section>
+    </page>
+</rendering>

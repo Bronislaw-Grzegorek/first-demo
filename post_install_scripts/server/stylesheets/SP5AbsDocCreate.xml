@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+// @<COPYRIGHT>@
+// ==================================================
+// Copyright 2014.
+// Siemens Product Lifecycle Management Software Inc.
+// All Rights Reserved.
+// ==================================================
+// @<COPYRIGHT>@
+	Filename  Awp0PLM4DocumentCreate.xml
+-->
+<!-- Style sheet rendering for Custom Document creation (#1). -->
+<rendering>
+  <page>
+    <section>
+      <property name="item_id" renderingHint="textfield"/>
+      <property name="revision:item_revision_id" />
+      <property name="object_name"/>
+      <property name="object_desc" />
+
+      <inject type="dataset" src="Ads1ADSTechDocumentCreate"/>
+      <property name="revision:DocumentTitle" />
+      <property name="revision:DocumentAuthor" />
+      <property name="revision:DocumentSubject" />
+	  <property name="revision:sp5AbsDocPropStr1"/>
+	  <property name="revision:sp5AbsDocPropStr2"/>
+	  <property name="revision:sp5AbsDocPropStr3"/>
+	  <property name="revision:sp5AbsDocPropStr4"/>
+	  <property name="revision:sp5AbsDocPropCLOV1"/>
+	  <property name="revision:sp5AbsDocPropCLOV2"/>
+	  <property name="revision:sp5AbsDocPropCLOV3"/>	  
+	  
+      <inject type="dataset" src="Cm1ChangeContextProviderForCreate"/>
+      <property name="revision:awp0ProcessTemplates" /> 
+      <htmlPanel declarativeKey="Awp0MultiFileUpload" />
+    </section>
+  </page>
+</rendering>

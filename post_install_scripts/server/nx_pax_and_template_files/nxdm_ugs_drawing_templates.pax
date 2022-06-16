@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Palette xmlns="http://www.ugsolutions.com/Schemas/2001/UGPalettes" schemaVersion="1.0">
+
+  <Presentation name="Drawing Templates (Inch)" bitmap="drawing_new.bmp" FileNewTab="Drawing" application="All" UsesMasterModel="Yes" Environment="Managed"/>
+
+  <PaletteEntry id="d1">
+    <References/>
+    <Presentation name="Sierra Space B Size Inch" description="Creates B size drawing" tooltip="This NX template creates a Sierra Space B Size Inch Drawing.">
+       <PreviewImage type="UGPart" location="${UGII_BASE_DIR}/drafting/templates/drawing_template.jpg"/>
+    </Presentation>
+    <ObjectData class="DrawingTemplate">
+        <TemplateFileType>none</TemplateFileType>
+        <Filename>@DB/TC_SPC_B_SIZE_INCH_SHT1/A</Filename>
+        <Units>English</Units>
+        <UsesMasterModel>Yes</UsesMasterModel>
+        <ItemType>Item</ItemType>
+        <RelationType>specification</RelationType>
+    </ObjectData>
+  </PaletteEntry>
+ 
+ <PaletteEntry id="d2">
+    <References/>
+    <Presentation name="Sierra Space D Size Inch" description="Creates D size drawing" tooltip="This NX template creates a Sierra Space D Size Inch Drawing.">
+       <PreviewImage type="UGPart" location="${UGII_BASE_DIR}/drafting/templates/drawing_template.jpg"/>
+    </Presentation>
+    <ObjectData class="DrawingTemplate">
+        <TemplateFileType>none</TemplateFileType>
+        <Filename>@DB/TC_SPC_D_SIZE_INCH_SHT1/A</Filename>
+        <Units>English</Units>
+        <UsesMasterModel>Yes</UsesMasterModel>
+        <ItemType>Item</ItemType>
+        <RelationType>specification</RelationType>
+    </ObjectData>
+  </PaletteEntry>
+  
+  <PaletteEntry id="d3">
+    <References/>
+    <Presentation name="Sierra Space J Size Inch" description="Creates J size drawing" tooltip="This NX template creates a Sierra Space J Size Inch Drawing.">
+       <PreviewImage type="UGPart" location="${UGII_BASE_DIR}/drafting/templates/drawing_template.jpg"/>
+    </Presentation>
+    <ObjectData class="DrawingTemplate">
+        <TemplateFileType>none</TemplateFileType>
+        <Filename>@DB/TC_SPC_J_SIZE_INCH_SHT1/A</Filename>
+        <Units>English</Units>
+        <UsesMasterModel>Yes</UsesMasterModel>
+        <ItemType>Item</ItemType>
+        <RelationType>specification</RelationType>
+    </ObjectData>
+  </PaletteEntry>
+  
+</Palette>
+

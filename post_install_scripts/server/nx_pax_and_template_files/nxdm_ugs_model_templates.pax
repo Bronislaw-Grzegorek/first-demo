@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Removed all Assembly files, decision was made to use Part file only (John P. Olson) - apaddock 04/27/2022 -->
+
+<Palette xmlns="http://www.ugsolutions.com/Schemas/2001/UGPalettes" schemaVersion="1.0">
+
+  <Presentation name="Master Model Templates" bitmap="sheet_and_block.bmp" FileNewTab="Model" application="All" UsesMasterModel="No" Environment="Managed"/>
+
+ <PaletteEntry id="d1">
+    <References/>
+    <Presentation name="SPRT" description="Sierra Space Inch SPRT Start Part">
+      <PreviewImage type="UGPart" location="${UGII_BASE_DIR}/ugii/templates/model_template.jpg"/>
+    </Presentation>
+    <ObjectData class="ModelTemplate">
+        <Filename>@DB/TC_SPC_PART_INCH/A</Filename>
+	<Units>English</Units>
+        <ItemType>SP5PartEng</ItemType>
+        <RelationType>master</RelationType>
+    </ObjectData>
+  </PaletteEntry>
+  
+  <PaletteEntry id="d2">
+    <References/>
+    <Presentation name="SCAD(REF)" description="Sierra Space Inch SCAD Start Part">
+      <PreviewImage type="UGPart" location="${UGII_BASE_DIR}/ugii/templates/model_template.jpg"/>
+    </Presentation>
+    <ObjectData class="ModelTemplate">
+        <Filename>@DB/TC_SPC_PART_INCH/A</Filename>
+	<Units>English</Units>
+        <ItemType>SP5PrDesNX</ItemType>
+        <RelationType>master</RelationType>
+    </ObjectData>
+  </PaletteEntry>
+
+    <PaletteEntry id="d3">
+    <References/>
+    <Presentation name="SPRT" description="Sierra Space MM SPRT Start Part">
+      <PreviewImage type="UGPart" location="${UGII_BASE_DIR}/ugii/templates/model_template.jpg"/>
+    </Presentation>
+    <ObjectData class="ModelTemplate">
+        <Filename>@DB/TC_SPC_PART_MM/A</Filename>
+	<Units>Metric</Units>
+        <ItemType>SP5PartEng</ItemType>
+        <RelationType>master</RelationType>
+    </ObjectData>
+  </PaletteEntry>
+  
+  <PaletteEntry id="d4">
+    <References/>
+    <Presentation name="SCAD(REF)" description="Sierra Space MM SCAD Start Part">
+      <PreviewImage type="UGPart" location="${UGII_BASE_DIR}/ugii/templates/model_template.jpg"/>
+    </Presentation>
+    <ObjectData class="ModelTemplate">
+        <Filename>@DB/TC_SPC_PART_MM/A</Filename>
+	<Units>Metric</Units>
+        <ItemType>SP5PrDesNX</ItemType>
+        <RelationType>master</RelationType>
+    </ObjectData>
+  </PaletteEntry>
+
+</Palette>

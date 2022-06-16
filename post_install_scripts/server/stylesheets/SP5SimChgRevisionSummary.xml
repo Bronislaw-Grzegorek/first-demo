@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+// @<COPYRIGHT>@
+// ==================================================
+// Copyright 2021.
+// Siemens Product Lifecycle Management Software Inc.
+// All Rights Reserved.
+// ==================================================
+// @<COPYRIGHT>@
+-->
+<!-- Default style sheet for displaying Change Notice rev summary. -->
+<rendering>
+    <header>
+        <image source="type"/>
+        <property name="owning_user"/>
+        <property name="last_mod_date"/>
+        <property name="release_status_list" renderingHint="label"/>
+        <property name="object_type"/>
+			<property name="sp5SimChgPropCLOV1"/>
+			<property name="sp5SimChgPropCLOV2"/>
+			<property name="sp5SimChgPropCLOV3"/>
+			<property name="sp5SimChgPropCLOV4"/>
+			<property name="sp5SimChgPropCLOV5"/>
+			<property name="sp5SimChgPropCLOV6"/>
+			<property name="sp5SimChgPropCLOV7"/>
+			<property name="sp5SimChgPropCLOV8"/>
+			<property name="sp5SimChgPropDate1"/>
+			<property name="sp5SimChgPropDate2"/>
+			<property name="sp5SimChgPropStr1"/>
+			<property name="sp5SimChgPropLStr1"/>
+    </header>
+    <page titleKey="tc_xrt_Overview">
+        <column width="30%">
+            <content visibleWhen="fnd0MyWorkflowTasks!=null">
+                  <section titleKey="tx_xrt_TaskToPerform">
+                      <htmlPanel declarativeKey="Awp0TargetCompleteTaskProcess"/>
+                 </section>
+            </content> 
+            <section title="Details" titleKey="tc_xrt_details">
+                <property name="object_name"/>
+                <property name="object_desc"/>
+                <property name="CMClosure"/>
+                <property name="CMMaturity"/>
+                <property name="CMImplPriority"/>
+            </section>
+            <section titleKey="tc_xrt_Participants">
+                <htmlPanel declarativeKey="Awp0ParticipantPanel"/>
+            </section>
+        </column>
+        <column width="70%">
+            <section>
+                <htmlPanel declarativeKey="Cm1MaturityProgressBar"/>
+            </section>
+            <content>
+                <htmlPanel declarativeKey="Cm1ChangeSummary"/>
+            </content>
+
+            <content>
+                <section titleKey="tc_xrt_ImpactedItems">
+                    <objectSet source="CMHasImpactedItem.ItemRevision" defaultdisplay="tableDisplay" sortdirection="ascending" sortby="object_name">
+                        <tableDisplay>
+                            <property name="item_id" width="50"/>
+                            <property name="object_name" width="300"/>
+                            <property name="item_revision_id" width="50"/>
+                            <property name="object_type" width="100"/>
+                            <property name="release_status_list" width="130"/>
+                            <property name="CMHasImpactedItem.cm0RequestedChange"/>
+                            <property name="CMHasImpactedItem.cm0LineageGroupId" width="100"/>
+                        </tableDisplay>
+                        <command actionKey="saveAsorReviseCommandAction" commandId="Cm1ReviseToSolutionCmd" renderingHint="commandbutton"/>
+                        <command actionKey="newBusinessObjectContextualAction" commandId="com.teamcenter.rac.common.AddNew" renderingHint="commandbutton">
+                              <parameter name="visibleTabs" value="palette,search"/>
+                        </command>
+                        <command actionKey="cutAction" commandId="org.eclipse.ui.edit.cut" renderingHint="commandbutton">
+                              <parameter name="localSelection" value="true"/>
+                        </command>
+                        <command actionKey="pasteAction" commandId="com.teamcenter.rac.viewer.pastewithContext" renderingHint="commandbutton"/>
+                    </objectSet>
+             </section>
+            </content>
+
+            <view name="actions">
+                <command actionKey="copyAction" commandId="com.teamcenter.rac.copy"/>
+                <command actionKey="reviseAction" commandId="com.teamcenter.rac.revise"/>
+            </view>
+        </column>
+    </page>
+
+    <inject type="dataset" src="WorkflowSummary"/>
+</rendering>
