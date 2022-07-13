@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+Copyright 2017 Siemens Product Lifecycle Management Software Inc. All Rights Reserved.
+================================================================================
+Copyright 2017.
+Siemens Product Lifecycle Management Software Inc.
+All Rights Reserved.
+================================================================================
+Copyright 2017 Siemens Product Lifecycle Management Software Inc. All Rights Reserved.
+-->
+<package guid="235040BA37CF38D39ECD49C2D4212C0F" packageId="bg4template">
+    <displayName value="${packageId}.displayName"/>
+    <description value="${packageId}.description"/>
+    <contentType value="application"/>
+    <propertyContribution/>
+    <dependencies>
+        <dependency id="aws2" type="requires"/>
+        <dependency id="cla0classification" type="requires"/>
+        <dependency id="cm" type="requires"/>
+        <dependency id="nx0tcin" type="requires"/>
+        <dependency id="translationservice" type="requires"/>
+        <dependency id="aa1activearchitectcore" type="requires"/>
+        <dependency id="ac0activecollaboration" type="requires"/>
+        <dependency id="activeworkspacebom" type="requires"/>
+        <dependency id="adm1admconsolecore" type="requires"/>
+        <dependency id="aud0auditaw" type="requires"/>
+        <dependency id="aut0authorizationaws" type="requires"/>
+        <dependency id="awa0awassistant" type="requires"/>
+        <dependency id="csi" type="requires"/>
+        <dependency id="dma1docmgmtaw" type="requires"/>
+        <dependency id="rb0reportingaw" type="requires"/>
+        <dependency id="relationshipviewer" type="requires"/>
+        <dependency id="s2clsocial" type="requires"/>
+        <dependency id="shapesearch" type="requires"/>
+        <dependency id="sub0subscription" type="requires"/>
+        <dependency id="um0usermanagement" type="requires"/>
+        <dependency id="Cm1cmaws" type="requires"/>
+        <dependency id="awn0nx" type="requires"/>
+        <dependency id="awv0activeworkspacevis" type="requires"/>
+        <dependency id="prf1prefmgmt" type="requires"/>
+        <dependency id="usg0awusageocc" type="requires"/>
+        <dependency id="sp5rimtc" type="requires"/>
+    </dependencies>
+    <artifact artifactType="fnd0_dataModelArtifact" guid="3FB3928F0C80491D297C894CF59A6438">
+        <deploymentActions>
+            <install>
+                <target description="Perform the file deployment actions including unzip, copy, and delete." name="fileProcessing">
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_bg4template_path}/artifacts/bg4template_template.zip"/>
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_bg4template_path}/artifacts/bg4template_install.zip"/>
+                    <copy file="${Teamcenter_bg4template_path}/artifacts/bg4template_icons.zip" todir="${Teamcenter_root_path}/install/bg4template"/>
+                </target>
+                <target description="Perform the operations that must be completed prior to the database being updated." name="preDatabaseUpdate">
+                    <TemplateDeploy name="bg4template"/>
+                </target>
+                <target description="Perform the operations that are database dependent." name="databaseUpdate"/>
+                <target description="Perform the operations that must be completed after the database update has occurred." name="postDatabaseUpdate"/>
+            </install>
+            <update>
+                <target description="Perform the file deployment actions including unzip, copy, and delete." name="fileProcessing">
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_bg4template_path}/artifacts/bg4template_template.zip"/>
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_bg4template_path}/artifacts/bg4template_install.zip"/>
+                    <copy file="${Teamcenter_bg4template_path}/artifacts/bg4template_icons.zip" force="true" overwrite="true" todir="${Teamcenter_root_path}/install/bg4template"/>
+                </target>
+                <target description="Perform the operations that must be completed prior to the database being updated." name="preDatabaseUpdate">
+                    <TemplateUpdate name="bg4template"/>
+                </target>
+                <target description="Perform the operations that are database dependent." name="databaseUpdate"/>
+                <target description="Perform the operations that must be completed after the database update has occurred." name="postDatabaseUpdate"/>
+            </update>
+        </deploymentActions>
+    </artifact>
+</package>

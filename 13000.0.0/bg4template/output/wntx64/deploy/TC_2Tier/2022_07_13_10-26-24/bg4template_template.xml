@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="Wed Jul 13 10:26:25 AM 2022" TcVersion="tc13000.0.0">
+    <Add>
+   <TcClass className="BG4_TestItem" description="" isExportable="false" isUninheritable="false" isUninstantiable="false" parentClassName="Item">
+     <TcAttribute attributeName="bg4_Attr1" attributeType="POM_string" description="" exportAsString="false" followOnExport="false" isArray="false" isCandidateKey="false" isNullsAllowed="true" isPublicRead="true" isPublicWrite="true" isTransient="false" isUnique="false" lowerBoundValue="" maxStringLength="128" noBackpointer="false" upperBoundValue=""/>
+     <TcAttribute attributeName="bg4_attr2" attributeType="POM_string" description="" exportAsString="false" followOnExport="false" isArray="false" isCandidateKey="false" isNullsAllowed="true" isPublicRead="true" isPublicWrite="true" isTransient="false" isUnique="false" lowerBoundValue="" maxStringLength="128" noBackpointer="false" upperBoundValue=""/>
+     <TcAttribute attributeName="bg4_attr3" attributeType="POM_string" description="" exportAsString="false" followOnExport="false" isArray="false" isCandidateKey="false" isNullsAllowed="true" isPublicRead="true" isPublicWrite="true" isTransient="false" isUnique="false" lowerBoundValue="" maxStringLength="128" noBackpointer="false" upperBoundValue=""/>
+     <TcAttribute attributeName="bg4_Name" attributeType="POM_string" description="" exportAsString="false" followOnExport="false" isArray="false" isCandidateKey="false" isNullsAllowed="true" isPublicRead="true" isPublicWrite="true" isTransient="false" isUnique="false" lowerBoundValue="" maxStringLength="128" noBackpointer="false" upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="BG4_TestItemMasterS" description="" isExportable="false" isUninheritable="false" isUninstantiable="false" parentClassName="ItemMaster"/>
+   <TcClass className="BG4_TestItemRevMasterS" description="" isExportable="false" isUninheritable="false" isUninstantiable="false" parentClassName="ItemVersionMaster"/>
+   <TcClass className="BG4_TestItemRevision" description="" isExportable="false" isUninheritable="false" isUninstantiable="false" parentClassName="ItemRevision">
+     <TcAttribute attributeName="bg4_rev_attr1" attributeType="POM_string" description="" exportAsString="false" followOnExport="false" isArray="false" isCandidateKey="false" isNullsAllowed="true" isPublicRead="true" isPublicWrite="true" isTransient="false" isUnique="false" lowerBoundValue="" maxStringLength="128" noBackpointer="false" upperBoundValue=""/>
+     <TcAttribute attributeName="bg4_rev_attr2" attributeType="POM_string" description="" exportAsString="false" followOnExport="false" isArray="false" isCandidateKey="false" isNullsAllowed="true" isPublicRead="true" isPublicWrite="true" isTransient="false" isUnique="false" lowerBoundValue="" maxStringLength="128" noBackpointer="false" upperBoundValue=""/>
+     <TcAttribute attributeName="bg4_rev_attr3" attributeType="POM_string" description="" exportAsString="false" followOnExport="false" isArray="false" isCandidateKey="false" isNullsAllowed="true" isPublicRead="true" isPublicWrite="true" isTransient="false" isUnique="false" lowerBoundValue="" maxStringLength="128" noBackpointer="false" upperBoundValue=""/>
+     <TcAttribute attributeName="bg4_name" attributeType="POM_string" description="" exportAsString="false" followOnExport="false" isArray="false" isCandidateKey="false" isNullsAllowed="true" isPublicRead="true" isPublicWrite="true" isTransient="false" isUnique="false" lowerBoundValue="" maxStringLength="128" noBackpointer="false" upperBoundValue=""/>
+   </TcClass>
+   <OperationInputType artifactName="BG4_TestItemCreI" description="CreateInput object for &quot;BG4_TestItem&quot; business object" isAbstract="false" parentTypeName="ItemCreI" typeClassName="BG4_TestItemCreI" typeName="BG4_TestItemCreI"/>
+   <OperationInputType artifactName="BG4_TestItemMasterCreI" description="CreateInput object for &quot;BG4_TestItemMaster&quot; business object" isAbstract="false" parentTypeName="Item MasterCreI" typeClassName="BG4_TestItemMasterCreI" typeName="BG4_TestItemMasterCreI"/>
+   <OperationInputType artifactName="BG4_TestItemMasterSCreI" description="CreateInput object for &quot;BG4_TestItemMasterS&quot; business object" isAbstract="false" parentTypeName="ItemMasterCreI" typeClassName="BG4_TestItemMasterSCreI" typeName="BG4_TestItemMasterSCreI"/>
+   <OperationInputType artifactName="BG4_TestItemMasterSSvAI" description="SaveAsInput object for &quot;BG4_TestItemMasterS&quot; business object" isAbstract="false" parentTypeName="ItemMasterSvAI" typeClassName="BG4_TestItemMasterSSvAI" typeName="BG4_TestItemMasterSSvAI"/>
+   <OperationInputType artifactName="BG4_TestItemMasterSvAI" description="SaveAsInput object for &quot;BG4_TestItemMaster&quot; business object" isAbstract="false" parentTypeName="Item MasterSvAI" typeClassName="BG4_TestItemMasterSvAI" typeName="BG4_TestItemMasterSvAI"/>
+   <OperationInputType artifactName="BG4_TestItemRevMasterSCreI" description="CreateInput object for &quot;BG4_TestItemRevMasterS&quot; business object" isAbstract="false" parentTypeName="ItemVersionMasterCreI" typeClassName="BG4_TestItemRevMasterSCreI" typeName="BG4_TestItemRevMasterSCreI"/>
+   <OperationInputType artifactName="BG4_TestItemRevMasterSSvAI" description="SaveAsInput object for &quot;BG4_TestItemRevMasterS&quot; business object" isAbstract="false" parentTypeName="ItemVersionMasterSvAI" typeClassName="BG4_TestItemRevMasterSSvAI" typeName="BG4_TestItemRevMasterSSvAI"/>
+   <OperationInputType artifactName="BG4_TestItemRevisionCreI" description="CreateInput object for &quot;BG4_TestItemRevision&quot; business object" isAbstract="false" parentTypeName="ItemRevisionCreI" typeClassName="BG4_TestItemRevisionCreI" typeName="BG4_TestItemRevisionCreI">
+     <OperationInputProperty compoundObjectConstant="" compoundObjectType="" description="" fieldType="SimpleProperty" propName="bg4_rev_attr1" srcPropName="bg4_rev_attr1"/>
+     <OperationInputProperty compoundObjectConstant="" compoundObjectType="" description="" fieldType="SimpleProperty" propName="bg4_rev_attr2" srcPropName="bg4_rev_attr2"/>
+     <OperationInputProperty compoundObjectConstant="" compoundObjectType="" description="" fieldType="SimpleProperty" propName="bg4_rev_attr3" srcPropName="bg4_rev_attr3"/>
+     <OperationInputProperty compoundObjectConstant="" compoundObjectType="" description="" fieldType="SimpleProperty" propName="bg4_name" srcPropName="bg4_name"/>
+   </OperationInputType>
+   <OperationInputType artifactName="BG4_TestItemRevisionMasterCreI" description="CreateInput object for &quot;BG4_TestItemRevisionMaster&quot; business object" isAbstract="false" parentTypeName="ItemRevision MasterCreI" typeClassName="BG4_TestItemRevisionMasterCreI" typeName="BG4_TestItemRevisionMasterCreI"/>
+   <OperationInputType artifactName="BG4_TestItemRevisionMasterSvAI" description="SaveAsInput object for &quot;BG4_TestItemRevisionMaster&quot; business object" isAbstract="false" parentTypeName="ItemRevision MasterSvAI" typeClassName="BG4_TestItemRevisionMasterSvAI" typeName="BG4_TestItemRevisionMasterSvAI"/>
+   <OperationInputType artifactName="BG4_TestItemRevisionRevI" description="ReviseInput object for &quot;BG4_TestItemRevision&quot; business object" isAbstract="false" parentTypeName="ItemRevisionRevI" typeClassName="BG4_TestItemRevisionRevI" typeName="BG4_TestItemRevisionRevI"/>
+   <OperationInputType artifactName="BG4_TestItemRevisionSvAI" description="SaveAsInput object for &quot;BG4_TestItemRevision&quot; business object" isAbstract="false" parentTypeName="ItemRevisionSvAI" typeClassName="BG4_TestItemRevisionSvAI" typeName="BG4_TestItemRevisionSvAI"/>
+   <OperationInputType artifactName="BG4_TestItemSvAI" description="SaveAsInput object for &quot;BG4_TestItem&quot; business object" isAbstract="false" parentTypeName="ItemSvAI" typeClassName="BG4_TestItemSvAI" typeName="BG4_TestItemSvAI"/>
+   <TcForm artifactName="BG4_TestItemMaster" description="MasterForm object for &quot;BG4_TestItem&quot; business object" formStorageClassName="BG4_TestItemMasterS" functionality="BG4_template" isAbstract="false" parentTypeName="Item Master" typeClassName="Form" typeName="BG4_TestItemMaster"/>
+   <TcForm artifactName="BG4_TestItemRevisionMaster" description="MasterForm object for &quot;BG4_TestItemRevision&quot; business object" formStorageClassName="BG4_TestItemRevMasterS" functionality="BG4_template" isAbstract="false" parentTypeName="ItemRevision Master" typeClassName="Form" typeName="BG4_TestItemRevisionMaster"/>
+   <TcStandardType artifactName="BG4_TestItem" description="" functionality="BG4_template" isAbstract="false" parentTypeName="Item" typeClassName="BG4_TestItem" typeName="BG4_TestItem"/>
+   <TcStandardType artifactName="BG4_TestItemMasterS" description="Form Storage object for &quot;BG4_TestItemMaster&quot; business object" functionality="BG4_template" isAbstract="false" parentTypeName="ItemMaster" typeClassName="BG4_TestItemMasterS" typeName="BG4_TestItemMasterS"/>
+   <TcStandardType artifactName="BG4_TestItemRevMasterS" description="Form Storage object for &quot;BG4_TestItemRevMaster&quot; business object" functionality="BG4_template" isAbstract="false" parentTypeName="ItemVersionMaster" typeClassName="BG4_TestItemRevMasterS" typeName="BG4_TestItemRevMasterS"/>
+   <TcStandardType artifactName="BG4_TestItemRevision" description="ItemRevision object for &quot;BG4_TestItem&quot;  business object" functionality="BG4_template" isAbstract="false" parentTypeName="ItemRevision" typeClassName="BG4_TestItemRevision" typeName="BG4_TestItemRevision"/>
+   <TcPropertyConstant allowOpsDataUpdate="true" allowOpsDataUpdateOverride="true" dataType="String" defaultValue="" description="" isMultiValued="false" isValueAttachmentSecured="false" name="BG4_ComplexName">
+     <Scope propertyName="object_name" typeName="Item"/>
+   </TcPropertyConstant>
+   <TcGlobalConstantAttach constantName="Fnd0SelectedLocales" value="en_US"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="BG4_TestItem" value="BG4_TestItemCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="BG4_TestItemMaster" value="BG4_TestItemMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="BG4_TestItemMasterS" value="BG4_TestItemMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="BG4_TestItemRevision" value="BG4_TestItemRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="BG4_TestItemRevisionMaster" value="BG4_TestItemRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="BG4_TestItemRevMasterS" value="BG4_TestItemRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="BG4_TestItem" value="BG4_TestItemRevision"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="BG4_TestItem" value="BG4_TestItemMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="BG4_TestItemRevision" value="BG4_TestItemRevisionMaster"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="BG4_TestItemRevision" value="BG4_TestItemRevisionRevI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="BG4_TestItem" value="BG4_TestItemSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="BG4_TestItemMaster" value="BG4_TestItemMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="BG4_TestItemMasterS" value="BG4_TestItemMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="BG4_TestItemRevision" value="BG4_TestItemRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="BG4_TestItemRevisionMaster" value="BG4_TestItemRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="BG4_TestItemRevMasterS" value="BG4_TestItemRevMasterSSvAI"/>
+   <TcPropertyConstantAttach constantName="ComplexProperty" propertyName="object_name" typeName="BG4_TestItemRevision" value="$item_id+&quot;_&quot;+$item_revision_id+&quot;_&quot;+$object_desc"/>
+   <TcPropertyConstantAttach constantName="Enabled" propertyName="bg4_Attr1" typeName="BG4_TestItem" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" propertyName="bg4_attr2" typeName="BG4_TestItem" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" propertyName="bg4_attr3" typeName="BG4_TestItem" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" propertyName="bg4_Name" typeName="BG4_TestItem" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" propertyName="bg4_name" typeName="BG4_TestItemRevision" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" propertyName="bg4_rev_attr1" typeName="BG4_TestItemRevision" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" propertyName="bg4_rev_attr2" typeName="BG4_TestItemRevision" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" propertyName="bg4_rev_attr3" typeName="BG4_TestItemRevision" value="true"/>
+   <TcPropertyConstantAttach constantName="Modifiable" propertyName="bg4_Attr1" typeName="BG4_TestItem" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" propertyName="bg4_attr2" typeName="BG4_TestItem" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" propertyName="bg4_attr3" typeName="BG4_TestItem" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" propertyName="bg4_Name" typeName="BG4_TestItem" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" propertyName="bg4_name" typeName="BG4_TestItemRevision" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" propertyName="bg4_rev_attr1" typeName="BG4_TestItemRevision" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" propertyName="bg4_rev_attr2" typeName="BG4_TestItemRevision" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" propertyName="bg4_rev_attr3" typeName="BG4_TestItemRevision" value="Write"/>
+   <Functionality description="Component for the template - bg4template" displayName="template" enabledForVerificationRules="false" name="BG4_template"/>
+   <TcUnitOfMeasure description="For test" unitOfMeasureName="BG4_SierraTestUOM" unitOfMeasureSymbol="mg"/>
+   <TcUnitOfMeasure description="For UOM in test" unitOfMeasureName="BG4_Test1" unitOfMeasureSymbol="mm"/>
+   <TcUnitOfMeasure description="for test" unitOfMeasureName="BG4_Test2" unitOfMeasureSymbol="wiorsta"/>
+   <TcUnitOfMeasure description="for in Test" unitOfMeasureName="BG4_TestUOM" unitOfMeasureSymbol="in"/>
+   <TcUnitOfMeasure description="" unitOfMeasureName="BG4_test3" unitOfMeasureSymbol="km"/>
+</Add>
+    <Change/>
+    <Delete/>
+</TcBusinessData>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessDataIncludes currentTemplateVersion="13.0_0" displayName="bg_template" enableOpsDataDeploy="true" guid="3FB3928F0C80491D297C894CF59A6438" isDescriptionMandatory="false" name="bg4template" optional="true" prefixes="BG4_" teamcenterTemplate="false">
+    <include file="foundation_template.xml"/>
+    <include file="aws2_template.xml"/>
+    <include file="cla0classification_template.xml"/>
+    <include file="cm_template.xml"/>
+    <include file="nx0tcin_template.xml"/>
+    <include file="translationservice_template.xml"/>
+    <include file="aa1activearchitectcore_template.xml"/>
+    <include file="ac0activecollaboration_template.xml"/>
+    <include file="activeworkspacebom_template.xml"/>
+    <include file="adm1admconsolecore_template.xml"/>
+    <include file="aud0auditaw_template.xml"/>
+    <include file="aut0authorizationaws_template.xml"/>
+    <include file="awa0awassistant_template.xml"/>
+    <include file="csi_template.xml"/>
+    <include file="dma1docmgmtaw_template.xml"/>
+    <include file="rb0reportingaw_template.xml"/>
+    <include file="relationshipviewer_template.xml"/>
+    <include file="s2clsocial_template.xml"/>
+    <include file="shapesearch_template.xml"/>
+    <include file="sub0subscription_template.xml"/>
+    <include file="um0usermanagement_template.xml"/>
+    <include file="Cm1cmaws_template.xml"/>
+    <include file="awn0nx_template.xml"/>
+    <include file="awv0activeworkspacevis_template.xml"/>
+    <include file="prf1prefmgmt_template.xml"/>
+    <include file="usg0awusageocc_template.xml"/>
+    <include file="sp5rimtc_template.xml"/>
+</TcBusinessDataIncludes>

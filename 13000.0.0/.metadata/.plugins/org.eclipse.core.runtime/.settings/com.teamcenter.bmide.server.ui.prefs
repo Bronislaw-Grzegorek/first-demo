@@ -1,0 +1,14 @@
+BusinessModelerIDEClientID=WIN-P9S34VPETM4_8568DBC306BC80F60573447DAFF1236A
+GenerateClientMetaCache=true
+RECENTLY_USED_WIZARDS=com.teamcenter.bmide.options.ui.providers.UnitOfMeasureProvider
+TC_2Tier=TC_2Tier,tccs,TC_2Tier,null,,infodba,,,1
+TC_2Tier_env=null,,
+TC_4Tier=TC_4Tier,tccs,TC_4Tier,http\://localhost\:8080/tc,,infodba,,,1
+TC_4Tier_env=http\://localhost\:8080/tc,,
+TcLastUsedServerProfile=NewOperationalData,TC_2Tier
+TcServerConfigFileProfiles=TcWeb1,
+TcServerProfiles=TcWeb1,TC_2Tier,TC_4Tier,
+TcWeb1=TcWeb1,http,localhost,8080,tc,,,,
+TccsEnvProfiles=TC_2Tier,TC_4Tier,
+TccsEnvs=TC_2Tier,TC_4Tier,
+eclipse.preferences.version=1

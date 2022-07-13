@@ -1,0 +1,69 @@
+====================================================================================================================================
+Command output for the business_model_updater
+====================================================================================================================================
+ Log File Name   : C:\Users\pack\AppData\Local\Temppack2TierTV\BMIDE\2022_07_13_10-26-25\process\business_model_updater_lang.log
+ Model File Name : C:\Apps\Siemens\TD\model\lang\delta_lang.xml
+ Update Option   : localization
+ Run Mode        : upgrade
+ Process Option  : all
+====================================================================================================================================
+
+
+====================================================================================================================================
+Processed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+====================================================================================================================================
+Unprocessed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+====================================================================================================================================
+Processed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+Add    | Property       | BG4_TestItemRevision{::}bg4_nam|       0 | Success                                         |              
+       |                | e                              |         |                                                 |              
+Add    | Property       | BG4_TestItemRevision{::}bg4_rev|       0 | Success                                         |              
+       |                | _attr1                         |         |                                                 |              
+Add    | Property       | BG4_TestItemRevision{::}bg4_rev|       0 | Success                                         |              
+       |                | _attr2                         |         |                                                 |              
+Add    | Property       | BG4_TestItemRevision{::}bg4_rev|       0 | Success                                         |              
+       |                | _attr3                         |         |                                                 |              
+Add    | Property       | BG4_TestItem{::}bg4_Attr1      |       0 | Success                                         |              
+Add    | Property       | BG4_TestItem{::}bg4_Name       |       0 | Success                                         |              
+Add    | Property       | BG4_TestItem{::}bg4_attr2      |       0 | Success                                         |              
+Add    | Property       | BG4_TestItem{::}bg4_attr3      |       0 | Success                                         |              
+Add    | BusinessObject | BG4_TestItemMasterS            |       0 | Success                                         |              
+Add    | BusinessObject | BG4_TestItemMaster             |       0 | Success                                         |              
+Add    | BusinessObject | BG4_TestItemRevMasterS         |       0 | Success                                         |              
+Add    | BusinessObject | BG4_TestItemRevisionMaster     |       0 | Success                                         |              
+Add    | BusinessObject | BG4_TestItemRevision           |       0 | Success                                         |              
+Add    | BusinessObject | BG4_TestItem                   |       0 | Success                                         |              
+
+
+
+
+====================================================================================================================================
+Unprocessed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+*****  Please refer to the Multi-Fields Keys (MFK) updater log at the following location for status of processed MFK type constant attach element(s): C:\Users\pack\AppData\Local\Temp\mfk_updater_2022_07_13_10-27-32.log.
+Memory=50601620, SQL=580, Time 0.094000s cpu, 0.183000s real at-Statistics

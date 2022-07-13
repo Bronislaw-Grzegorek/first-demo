@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization" Date="Wed Jul 13 11:07:56 AM 2022">
+    <Add>
+   <key id="BusinessObject{::}BG4_TestItemMasterS" locale="en_US" status="Approved">Test Item Master Storage</key>
+   <key id="BusinessObject{::}BG4_TestItemMaster" locale="en_US" status="Approved">Test Item Master</key>
+   <key id="BusinessObject{::}BG4_TestItemRevMasterS" locale="en_US" status="Approved">Test Item Revision Master Storage</key>
+   <key id="BusinessObject{::}BG4_TestItemRevisionMaster" locale="en_US" status="Approved">Test Item Revision Master</key>
+   <key id="BusinessObject{::}BG4_TestItemRevision" locale="en_US" status="Approved">Test Item Revision</key>
+   <key id="BusinessObject{::}BG4_TestItem" locale="en_US" status="Approved">BgTestItem</key>
+   <key id="Property{::}BG4_TestItemRevision{::}bg4_name" locale="en_US" status="Approved">bg_name</key>
+   <key id="Property{::}BG4_TestItemRevision{::}bg4_rev_attr1" locale="en_US" status="Approved">rev attr1</key>
+   <key id="Property{::}BG4_TestItemRevision{::}bg4_rev_attr2" locale="en_US" status="Approved">rev attr2</key>
+   <key id="Property{::}BG4_TestItemRevision{::}bg4_rev_attr3" locale="en_US" status="Approved">rev attr3</key>
+   <key id="Property{::}BG4_TestItem{::}bg4_Attr1" locale="en_US" status="Approved">Attr1</key>
+   <key id="Property{::}BG4_TestItem{::}bg4_Name" locale="en_US" status="Approved">BgName</key>
+   <key id="Property{::}BG4_TestItem{::}bg4_attr2" locale="en_US" status="Approved">attr2</key>
+   <key id="Property{::}BG4_TestItem{::}bg4_attr3" locale="en_US" status="Approved">attr3</key>
+</Add>
+</TcBusinessDataLocalization>

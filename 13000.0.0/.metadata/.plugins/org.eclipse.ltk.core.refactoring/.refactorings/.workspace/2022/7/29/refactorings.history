@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/bg4template/output/wntx64/packaging/full_update/bg4template_wntx64_1.0_2022_04_20_09-31-08" element2="/bg4template/output/wntx64/packaging/full_update/bg4template_wntx64_1.0_2022_07_11_12-16-58" element3="/bg4template/output/wntx64/packaging/full_update/bg4template_wntx64_1.0_2022_07_11_12-33-37" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1657729069691"/>
+</session>

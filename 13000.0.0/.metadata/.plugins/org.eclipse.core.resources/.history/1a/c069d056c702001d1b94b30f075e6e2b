@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Document   : feature_bg4template.xml
+    Description: This XML is used by TEM to install or upgrade the "bg4template" solution.
+--><feature>
+    <name value="bg_template"/>
+    <property name="feature_name" value="bg4template"/>
+    <group value="package"/>
+    <guid value="235040BA37CF38D39ECD49C2D4212C0F"/>
+    <bundle value="${feature_name}Bundle.xml"/>
+    <description value="${feature_name}.description"/>
+    <include file="dataModelDependency.xml"/>
+    <relation>
+        <depends name="aws2" value="EF6284519D32B8DADCF0F05213AF807B"/>
+        <depends name="cla0classification" value="DA3F5D4113BC31CC36A257EAB0669DDA"/>
+        <depends name="cm" value="E9B8A3F6B7B53AE540DCC54C13B3C201"/>
+        <depends name="nx0tcin" value="0BEECDCD0AD8B6D45617733583A4A78C"/>
+        <depends name="translationservice" value="301F12B06B3EAAB18DC0C2B9444F3B20"/>
+        <depends name="aa1activearchitectcore" value="711003675C5174C1FEB859208E69F692"/>
+        <depends name="ac0activecollaboration" value="53E443A1E11FB10E635B0AA6285DB63F"/>
+        <depends name="activeworkspacebom" value="0F47FD6920230AC9CFDB79C9AC941ADA"/>
+        <depends name="adm1admconsolecore" value="A66DA1DA1116896B8F028F7DDDC8E491"/>
+        <depends name="aud0auditaw" value="3Q5E2ST4R267WD0HMZ0V9LOV9YKF9218"/>
+        <depends name="aut0authorizationaws" value="E5F45EFFA34DA47F2CD8E4F150F81C11"/>
+        <depends name="awa0awassistant" value="5DFD24AF99AFFD3941ADF450054886F9"/>
+        <depends name="csi" value="D18192F4475ADEA11EC85F454C6ABA31"/>
+        <depends name="dma1docmgmtaw" value="7F3FE95ADA658AA457AB15EF5B75B3FA"/>
+        <depends name="rb0reportingaw" value="841B43626F01810EE89A04FF22C744D4"/>
+        <depends name="relationshipviewer" value="75316003BA5162EFA94C6C205E068586"/>
+        <depends name="s2clsocial" value="3E637E73EBF093620F8C1101D2BABF7A"/>
+        <depends name="shapesearch" value="B9E492522F89384ADD92601B2AB91DC8"/>
+        <depends name="sub0subscription" value="6FE48291523DB8DCDAF0F05213AF8B70"/>
+        <depends name="um0usermanagement" value="04A9489F7F5D51E0B521903B748C87B3"/>
+        <depends name="Cm1cmaws" value="B75C673EA57FD9D5EBEF544DE7F07F4E"/>
+        <depends name="awn0nx" value="4E5E31864D7C986B13708F325714961E"/>
+        <depends name="awv0activeworkspacevis" value="1F2AD473B3C558A24A97D1430FB77F63"/>
+        <depends name="prf1prefmgmt" value="9E6BC13FD90E3DE3AE464EC283A369FC"/>
+        <depends name="usg0awusageocc" value="4DEEEA586250B0887A708BE51B9B9051"/>
+        <depends name="sp5rimtc" value="4556E8174DF483204FBC334616ED18CD"/>
+    </relation>
+    <feature>
+        <!--  Feature: Data Model -->
+        <name value="Data Model"/>
+        <property name="feature_id" value="datamodel"/>
+        <property name="bmide_optional" value="false"/>
+        <property name="template_name" value="${feature_name}"/>
+        <property name="template_file" value="${template_name}_template.xml"/>
+        <root value="true"/>
+        <bundle value="${template_name}Bundle.xml"/>
+        <description value="${template_name}.description"/>
+        <guid value="3FB3928F0C80491D297C894CF59A6438"/>
+        <include file="coreDataModel2.xml"/>
+        <include file="generatePlmxmlSchema.xml"/>
+    </feature>
+    <dependencyReferences>
+        <reference name="foundation" value="8C061DD51E13E0CB9DC4687B1A3348BE"/>
+    </dependencyReferences>
+</feature>

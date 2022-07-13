@@ -1,0 +1,33 @@
+
+--------------------------------------------------------------------------------
+Log file name : server_metadata_cache.log
+Timestamp     : 2022_07_13_11-09-13
+Action        : Generate Server Cache [OFF: Deletes the server cache]
+
+
+--------------------------------------------------------------------------------
+Generate Server Cache Summary
+--------------------------------------------------------------------------------
+Generate Server Cache Step 1 of 2: SUCCESS
+Generate Server Cache Step 2 of 2: NOT EXECUTED
+
+
+--------------------------------------------------------------------------------
+Generate Server Cache Step 1 of 2:
+--------------------------------------------------------------------------------
+Description: This steps generates / deletes the server(metadata) cache.
+If this step deletes the server cache then step #2 step is not executed.
+Executing: generate_metadata_cache
+Result: Success
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Command output for the generate_metadata_cache
+
+--------------------------------------------------------------------------------
+Log File Name         : C:\Users\pack\AppData\Local\Temppack2TierTV\BMIDE\2022_07_13_11-09-13\process\server_metadata_cache.log
+Delete cache?         : Yes
+
+--------------------------------------------------------------------------------
+Shared metadata cache version 23 deleted successfully.

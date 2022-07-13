@@ -1,0 +1,297 @@
+
+------------------------------------------------------------------------------------------------------------------
+LogFileName    : Deploy.log
+TimeStamp      : 13-Jul-2022_10-26-25
+Options        : Full Update
+Deploy Source  : BMIDE
+------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------
+Deploy Summary
+------------------------------------------------------------------------------------------------------------------
+
+*****  BMIDE deployment lock utility results  *****
+
+*****  BMIDE deployment lock utility is successful  *****
+Deploy Step 1 of 9: Success
+Deploy Step 2 of 9: Success
+Deploy Step 3 of 9: Success
+Deploy Step 4 of 9: Success
+Deploy Step 5 of 9: Success
+Deploy Step 6 of 9: Success
+Deploy Step 7 of 9: Success
+Deploy Step 8 of 9: Success
+Deploy Step 9 of 9: Success
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 1 of 9:
+---------------------------------------------------------------------------------------------------------------------
+Description: Validating template for deployment 
+
+
+Result: Success
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 2 of 9:
+---------------------------------------------------------------------------------------------------------------------
+Description: Adding entries to the master.xml file
+
+Adding the following entries:
+bg4template_template.xml
+
+Result: Success
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 3 of 9:
+---------------------------------------------------------------------------------------------------------------------
+Description: Backup the existing model.xml file to model_backup.xml. 
+Consolidate all templates into the <TC_DATA>/model/model.xml file.
+Backing up model.xml to model_backup.xml.
+
+The file model.xml is copied to: C:\Apps\Siemens\TD\model\model_backup.xml
+
+Result: Success
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 4 of 9:
+---------------------------------------------------------------------------------------------------------------------
+Description: Creates a backup of model_lang.xml into model_lang_backup.xml.
+The file model_lang.xml is copied to: C:\Apps\Siemens\TD\model\lang\model_backup_lang.xml
+
+Result: Success
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 5 of 9:
+---------------------------------------------------------------------------------------------------------------------
+Description: Consolidate templates from master.xml to model.xml. 
+
+The full path to the master file:C:\Apps\Siemens\TD\model
+The full path to the file that should be generated: C:\Apps\Siemens\TD\model\model.xml
+
+Result: Success
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 6 of 9:
+---------------------------------------------------------------------------------------------------------------------
+Description: Extract the list of allowable Live Update elements
+from the database into the live_update_preference.xml file.
+The Process Mode is not Ops Data
+
+Result: Success
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 7 of 9:
+---------------------------------------------------------------------------------------------------------------------
+Description: Loads the new model (deployed from BMIDE) and the old model (previous) 
+to compute the elements that were added, deleted, or changed in the BMIDE. 
+Verifies that each of these elements are permitted to be updated by verifying against 
+the Live Update Elements List from the database. Writes the added, deleted, changed elements to a delta.xml file.
+
+Loading the Backup File...
+Loading the Consolidated File...
+Comparing the two Files...
+Creating the Delta file...
+
+Result: Success
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 8 of 9:
+---------------------------------------------------------------------------------------------------------------------
+Description: Compares model_lang.xml and model_lang_backup.xml and generates delta_lang.xml.
+Comparing the two Localization Files...
+Creating the Localization Delta file...
+
+Result: Success
+
+
+
+Uploading the project backup files to Database...
+	 Processing File:bg4template_project_tc13000.2.0.zip
+Result: Success
+
+
+
+Uploading the project icon files to Database...
+Result: Completed uploading the project icon files 
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 9 of 9:
+---------------------------------------------------------------------------------------------------------------------
+Description: Process the delta.xml file committing each data model element to the database.
+Executing: business_model_updater.
+Result: Success
+
+
+
+====================================================================================================================================
+Command output for the business_model_updater
+====================================================================================================================================
+ Log File Name   : C:\Users\pack\AppData\Local\Temppack2TierTV\BMIDE\2022_07_13_10-26-25\process\business_model_updater.log
+ Model File Name : C:\Apps\Siemens\TD\model\delta.xml
+ Update Option   : all
+ Run Mode        : upgrade
+ Process Option  : all
+====================================================================================================================================
+
+
+====================================================================================================================================
+Processed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+Add    | TcClass        | BG4_TestItem                   |       0 | Success                                         |              
+Add    | TcClass        | BG4_TestItemMasterS            |       0 | Success                                         |              
+Add    | TcClass        | BG4_TestItemRevMasterS         |       0 | Success                                         |              
+Add    | TcClass        | BG4_TestItemRevision           |       0 | Success                                         |              
+
+
+
+
+====================================================================================================================================
+Unprocessed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+====================================================================================================================================
+Processed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+Add    | TcStandardType | BG4_TestItem                   |       0 | Success                                         |              
+Add    | TcStandardType | BG4_TestItemMasterS            |       0 | Success                                         |              
+Add    | TcStandardType | BG4_TestItemRevMasterS         |       0 | Success                                         |              
+Add    | TcStandardType | BG4_TestItemRevision           |       0 | Success                                         |              
+Add    | TcForm         | BG4_TestItemMaster             |       0 | Success                                         |              
+Add    | TcForm         | BG4_TestItemRevisionMaster     |       0 | Success                                         |              
+Add    | TcUnitOfMeasure| BG4_SierraTestUOM              |       0 | Success                                         |              
+Add    | TcPropertyConst| BG4_ComplexName                |       0 | Success                                         |              
+       | ant            |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:BG4_TestItem       |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:BG4_TestItemMaster |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:BG4_TestItemMasterS|       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:BG4_TestItemRevisio|       0 | Success                                         |              
+       | ttach          | n                              |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:BG4_TestItemRevisio|       0 | Success                                         |              
+       | ttach          | nMaster                        |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:BG4_TestItemRevMast|       0 | Success                                         |              
+       | ttach          | erS                            |         |                                                 |              
+Add    | TcTypeConstantA| ItemRevision:BG4_TestItem      |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:BG4_TestItem        |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:BG4_TestItemRevision|       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| ReviseInput:BG4_TestItemRevisio|       0 | Success                                         |              
+       | ttach          | n                              |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:BG4_TestItem       |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:BG4_TestItemMaster |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:BG4_TestItemMasterS|       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:BG4_TestItemRevisio|       0 | Success                                         |              
+       | ttach          | n                              |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:BG4_TestItemRevisio|       0 | Success                                         |              
+       | ttach          | nMaster                        |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:BG4_TestItemRevMast|       0 | Success                                         |              
+       | ttach          | erS                            |         |                                                 |              
+Add    | TcPropertyConst| ComplexProperty:BG4_TestItemRev|       0 | Success                                         |              
+       | antAttach      | ision:object_name              |         |                                                 |              
+Add    | TcPropertyConst| Enabled:BG4_TestItem:bg4_Attr1 |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:BG4_TestItem:bg4_attr2 |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:BG4_TestItem:bg4_attr3 |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:BG4_TestItem:bg4_Name  |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:BG4_TestItemRevision:bg|       0 | Success                                         |              
+       | antAttach      | 4_name                         |         |                                                 |              
+Add    | TcPropertyConst| Enabled:BG4_TestItemRevision:bg|       0 | Success                                         |              
+       | antAttach      | 4_rev_attr1                    |         |                                                 |              
+Add    | TcPropertyConst| Enabled:BG4_TestItemRevision:bg|       0 | Success                                         |              
+       | antAttach      | 4_rev_attr2                    |         |                                                 |              
+Add    | TcPropertyConst| Enabled:BG4_TestItemRevision:bg|       0 | Success                                         |              
+       | antAttach      | 4_rev_attr3                    |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:BG4_TestItem:bg4_Att|       0 | Success                                         |              
+       | antAttach      | r1                             |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:BG4_TestItem:bg4_att|       0 | Success                                         |              
+       | antAttach      | r2                             |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:BG4_TestItem:bg4_att|       0 | Success                                         |              
+       | antAttach      | r3                             |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:BG4_TestItem:bg4_Nam|       0 | Success                                         |              
+       | antAttach      | e                              |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:BG4_TestItemRevision|       0 | Success                                         |              
+       | antAttach      | :bg4_name                      |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:BG4_TestItemRevision|       0 | Success                                         |              
+       | antAttach      | :bg4_rev_attr1                 |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:BG4_TestItemRevision|       0 | Success                                         |              
+       | antAttach      | :bg4_rev_attr2                 |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:BG4_TestItemRevision|       0 | Success                                         |              
+       | antAttach      | :bg4_rev_attr3                 |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemCreI               |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemMasterCreI         |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemMasterSCreI        |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemMasterSSvAI        |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemMasterSvAI         |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemRevMasterSCreI     |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemRevMasterSSvAI     |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemRevisionCreI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemRevisionMasterCreI |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemRevisionMasterSvAI |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemRevisionRevI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemRevisionSvAI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| BG4_TestItemSvAI               |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+
+
+
+
+====================================================================================================================================
+Unprocessed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+*****  Please refer to the Multi-Fields Keys (MFK) updater log at the following location for status of processed MFK type constant attach element(s): C:\Users\pack\AppData\Local\Temp\mfk_updater_2022_07_13_10-27-25.log.
+Memory=53419324, SQL=1248, Time 0.735000s cpu, 1.836000s real at-Statistics
+
